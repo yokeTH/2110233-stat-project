@@ -142,7 +142,8 @@ export default function Home() {
     return (
       <main className="flex h-screen items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-bold mb-4">Thank You!</h1>
+          <h1 className="text-3xl font-bold">Thank You!</h1>
+          <h2 className="text-xl mb-4">For assisting us with the 2110233 course project</h2>
           <p className="text-gray-600 mb-2">Your response has been recorded.</p>
           <p className="text-gray-600">
             For another test, please contact the tester.
@@ -177,9 +178,9 @@ export default function Home() {
         strategy="afterInteractive"
       />
       <main className="flex h-screen items-center justify-center p-6 sm:p-24">
-        <div className="flex flex-row gap-6 sm:gap-12">
+        <div className="flex flex-row gap-6 sm:gap-12 md:gap-24 lg:gap-48">
           <Button
-            className="px-8"
+            className="px-8 md:px-10 md:py-6 md:text-lg lg:px-12 lg:py-8 lg:text-xl"
             variant={variant === "A" ? "default" : "secondary"}
             onClick={() => handleClick("yes")}
           >
@@ -187,7 +188,7 @@ export default function Home() {
           </Button>
           <Button
             variant="secondary"
-            className="px-8"
+            className="px-8 md:px-10 md:py-6 md:text-lg lg:px-12 lg:py-8 lg:text-xl"
             onClick={() => handleClick("no")}
           >
             No
