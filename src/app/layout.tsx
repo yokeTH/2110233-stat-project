@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "A/B Testing App",
-  description: "A/B Testing with Next.js and Middleware",
+  description: "A/B Testing for 2110233 course",
 };
 
 export default function RootLayout({
